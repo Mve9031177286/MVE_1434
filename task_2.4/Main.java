@@ -1,21 +1,16 @@
+/*
+Задание: Пользователь вводит сумму вклада и процент, который будет начисляться ежегодно. Отобразить размер вклада поочередно на ближайшие 5 лет.
+*/
+
 import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        Scanner scan = new Scanner (System.in);
+        Scanner scan = new Scanner(System.in);
         float a = scan.nextInt();
         float b = scan.nextInt();
-        float c = a/100*b+a;
-        System.out.println(c);
-        float d = c/100*b+c;
-        System.out.println(d);
-        float e = d/100*b+d;
-        System.out.println(e);
-        float f = e/100*b+e;
-        System.out.println(f);
-        float g = f/100*b+f;
-        System.out.println(g);
-
-
-
+        for (int i = 1; i < 6; i++) {
+            a = a/100*b+a;
+            System.out.println(a);
+        }
     }
 }
