@@ -7,13 +7,10 @@ public class Main {
         Scanner scan = new Scanner(System.in);
         int a = scan.nextInt();
         int b = scan.nextInt();
-        String c = "True";
-        String d = "False";
+
+        if (a==b) System.out.println("true");
+        else
+            System.out.println("false");
     }
-        public static int getMin ( int a, int b) {
-            if (a == b) return c;
-            System.out.println(c);
-            else return d;
-            System.out.println(d);
-        }
+
 }
