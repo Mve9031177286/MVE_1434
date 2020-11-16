@@ -8,12 +8,14 @@ public class Main {
     public static void main(String[] args) {
         int a = 31;
         for ( int i=2; i<31; i++) {
-        if (a%i==0) {
-            System.out.println("true");
-        }
+            if (a%i==0) {
+                System.out.println("true");
+                break;
+            }
             else {
-            System.out.println("false");
-        }//напишите тут ваш код
+                System.out.println("false");
+                break;
+            }//напишите тут ваш код
         }
 
     }
