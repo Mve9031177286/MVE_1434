@@ -5,14 +5,17 @@
 
 public class Main {
     public static void main(String[] args) {
-       int [] nums = {7,8,5,2};
-       for (int i=0; i< nums.length; i++) {
-           if (nums[i]==5){
-               System.out.print("да");}
-           else{
-               System.out.print("нет");
-           }
-       }//напишите тут ваш код
-
+        int [] nums = {7,8,5,2};
+        int a=0;
+        for (int i=0; i< nums.length; i++) {
+            if (nums[i]==5){
+                System.out.print("да");
+                a = 1;
+                break;
+            }
+        }//напишите тут ваш код
+        if (a == 0) {
+            System.out.print("нет");
+        }
     }
 }
