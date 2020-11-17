@@ -8,7 +8,7 @@ public class Main {
       int nums [] = { 2,5,4,5,6};
       int sum = 0;
       int count = 0;
-      while (sum<=10) {
+      while (sum<10) {
           sum = sum + nums[count];
           count++;
 
