@@ -2,7 +2,7 @@ import java.io.FileWriter;
 import java.util.Scanner;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Arrays;
+
 
 public class Main {
     public static void main(String[] args) {
@@ -21,8 +21,9 @@ public class Main {
             int c[] = new int[];
             while ((c=reader.read()) != -1)
             {
-                Arrays.sort(с);
-                System.out.print((char) c%2 == 0);
+                for(int x : с);
+                if x%2
+                System.out.print((char) x);
             }
 
         } catch (IOException e) {
