@@ -22,7 +22,7 @@ public class Main {
             while ((c=reader.read()) != -1)
             {
                 for(int x : с);
-                if x%2
+                if x%2 == 0;
                 System.out.print((char) x);
             }
 
