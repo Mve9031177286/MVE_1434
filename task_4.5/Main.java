@@ -44,9 +44,7 @@ public class Main {
         public Pegasus(String color,String breed) {
             super(color, breed);
         }
-        public Pegasus(String color,String breed);
-        }
-
-        public void fly(){ out.println("Игого, я полетел(а)");
+      
+            public void fly(){ out.println("Игого, я полетел(а)");
             }
     }
