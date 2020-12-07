@@ -4,12 +4,19 @@
 
 
 public class Main {
+    
     public static void main(String[] args) {
-        int num[] = {4,2,6,2,65};
-                System.out.println(num[0]);
-                System.out.println(num[0+1]);
-                System.out.println(num[0+2]);
-                System.out.println(num[0+3]);
-                System.out.println(num[0+4]);
+        int nums[] = {4,2,6,2,65};
+        outnums();
+         
     }
+    
+    public static void outnums {
+    if (nums[i] == nums.lenght)
+        return;
+    System.out.println(nums[i]);
+        nums[i] == nums [i+1];
+    outnums();
+    }
+    
 }
