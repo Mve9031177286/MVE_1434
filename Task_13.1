@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+public class Application {
+
+    public static void main(String[] args) {
+        float num1;
+        float num2;
+        float ans;
+        char op;
+        Scanner reader = new Scanner(System.in);
+        System.out.println("Введите два числа, после каждого нажмите Enter: ");
+        if (reader.hasNextFloat()) {
+            num1 = reader.nextFloat();
+        } else {
+            System.out.println("Ошибка. Перезапустите программу");
+            reader.nextLine();
+            return;
+        }
+        if (reader.hasNextFloat()) {
+            num2 = reader.nextFloat();
+        } else {
+            System.out.println("Ошибка. Перезапустите программу");
+            reader.nextLine();
+            return;
+        }
+        System.out.println("Выберите действие: +, -, *, / и нажмите Enter");
+        op = reader.next().charAt(0);
+        switch (op) {
+            case '+':
+                ans = num1 + num2;
+                break;
+            case '-':
+                ans = num1 - num2;
+                break;
+            case '*':
+                ans = num1 * num2;
+                break;
+            case '/':
+                ans = num1 / num2;
+                break;
+            default:
+                System.out.println("Некорректно введено действие. Перезапустите программу");
+                return;
+        }
+        System.out.println("Действие с результатом:");
+        System.out.printf(num1 + " " + op + " " + num2 + " = " + ans);
+    }
+}
